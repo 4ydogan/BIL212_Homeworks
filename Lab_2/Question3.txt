@@ -1,0 +1,32 @@
+3 adet methodumuz var. Bunların isimleri sırası ile method1, method2 ve method3.
+
+Öncelikle method1'i inceleyerek başlayalım. 
+method1 teroik olarak O(N) zaman karamaşıklığına sahip olduğunu düşünüyorum.
+Deneysel olarak 
+ - N = 20000 için 199.900 işlem
+ - N = 40000 için 399.900 işlem
+ - N = 80000 için 799.900 işlem
+olduğunu gözlemledim.
+
+method2'yi inceleyecek olursak:
+Teorik olarak O(N^2) zaman karamaşıklığına sahip olduğunu düşünüyorum.
+Deneysel olarak 
+ - N = 20000 için 36.000.000 işlem
+ - N = 40000 için 144.000.000 işlem
+ - N = 80000 için 576.000.000 işlem
+olduğunu gözlemledim.
+
+method3'te ise durum biraz farklı:
+N sayısının son basamağındaki rakam ne kadar büyükse yapılan işlem sayısı da artıyor.
+Teorik olarak O(N*N!) zaman karamaşıklığına sahip olduğunu düşünüyorum.
+Deneysel olarak 
+ - N = 20000 için 20000 işlem
+ - N = 40000 için 40000 işlem
+ - N = 80000 için 80000 işlem
+olduğunu gözlemledim.
+
+Ayrıca
+- N = 20000 için 20000 işlem
+- N = 20005 için 140000 işlem
+- N = 20009 için 220000 işlem
+olduğunu gözlemledim.
