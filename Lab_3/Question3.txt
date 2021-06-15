@@ -1,0 +1,14 @@
+Bu bölümde 2 adet method yazmamız istenmiş lakin ikinci methodu yazamadığım için sadece birinci methodu değerlendireceğim.
+
+Methodumuz get(int index) methodunu kullanarak ilerleyen bir algoritma kullanıyor. 
+Big Oh notasyonunda O(n) zaman karmaşıklığına sahip olduğunu tahmin ediyorum.
+20000, 40000 ve 80000 gibi büyük sayılar ile de denediğimde tahminimin doğru olduğunu gördüm.
+Ancak geçen zaman ile işlem sayısı biraz farklı çıktı.
+
+20.000 ile test ettiğimde yaklaşık 10.000 işlem 465 ms sürdü.
+
+40.000 ile test ettiğimde yaklaşık 20.000 işlem 1842 ms sürdü.
+
+80.000 ile test ettiğimde yaklaşık 40.000 işlem 7318 ms sürdü.
+
+Bu da (n) ile değil (n^2) ile doğru orantılı olarak arttığını gösteriyor.
